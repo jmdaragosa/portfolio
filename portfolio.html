@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-white font-mono px-4 md:px-20 lg:px-60 py-4">
+    <!-- Profile section -->
+    <div
+      class="border-gray-300 w-auto h-auto pb-4 m-2 rounded-md flex flex-row px-4"
+    >
+      <div class="ml-2">
+        <div class="flex flex-row">
+          <img
+            src="/images/profile-pic.jpg"
+            alt="Profile picture of Jazmine Marie Puyat"
+            class="size-20 object-cover rounded-[50%] m-4"
+          />
+          <div>
+            <p class="mt-6 text-xl">Jazmine Marie Puyat</p>
+            <p class="text-xs">Software Engineering Student</p>
+            <p class="text-xs flex items-center gap-1">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                class="w-4 h-4"
+              >
+                <path
+                  d="M12 2C8.134 2 5 5.134 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.866-3.134-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 
+                  2.5 2.5 0 0 1 0 5z"
+                />
+              </svg>
+              Cebu, Philippines
+            </p>
+          </div>
+        </div>
+
+        <div class="flex flex-col items-center gap-3 mt-8">
+          <div class="flex flex-row gap-2">
+            <a
+              href=""
+              class="w-44 text-center bg-white text-black font-semibold px-4 py-2 rounded-lg shadow hover:bg-gray-400 transition"
+            >
+              View Resume
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/jazmine-marie-puyat-a7b613330/"
+              class="w-40 text-center bg-white text-black font-semibold px-4 py-2 rounded-lg shadow hover:bg-gray-400 transition"
+            >
+              View LinkedIn
+            </a>
+          </div>
+
+          <a
+            href="mailto:jmdaragosa.puyat@gmail.com"
+            class="w-[344px] text-center bg-black text-white font-semibold px-4 py-2 rounded-lg shadow hover:bg-gray-500 hover:text-black transition"
+          >
+            Send Email
+          </a>
+        </div>
+      </div>
+      <div class="ml-10 mt-4">
+        <p class="text-2xl font-semibold">About Me</p>
+        <div class="border-t border-gray-300 my-4"></div>
+        <p class="mt-4 text-sm text-justify">
+          I’m a Software Engineering student with a strong interest in backend
+          development, particularly using Python and Django. I enjoy building
+          web applications that are both efficient and scalable, and Throughout
+          my studies, I have worked on projects that involve database design,
+          API development, and user authentication systems, which have
+          strengthened my problem-solving and coding skills. I’m currently
+          seeking internship opportunities where I can apply my knowledge,
+          contribute to real-world projects, and grow as a developer while
+          making a meaningful impact in a professional environment.
+        </p>
+      </div>
+    </div>
+
+    <!-- Info sesction -->
+    <div class="flex ml-2">
+      <!-- Education -->
+      <div
+        class="bg-gray-100 border border-gray-300 w-auto h-auto pb-4 m-2 rounded-md px-4"
+      >
+        <p class="mt-2 text-xl font-semibold">Education</p>
+        <div class="border-t border-gray-300 my-4"></div>
+        <ul class="mt-2 text-sm">
+          <li class="font-bold">University of Cebu – Banilad Campus</li>
+          <li>Bachelor of Science in Information Technology</li>
+          <li>Specialization: Software Engineering</li>
+          <li class="text-gray-600">2023 – Present</li>
+        </ul>
+        <ul class="mt-4 text-sm">
+          <li class="font-bold">Lithan Academy - Singapore</li>
+          <li>Applied Degree in Software Engineering</li>
+          <li class="text-gray-600">2023 – Present</li>
+        </ul>
+      </div>
+
+      <!-- Skills -->
+      <div
+        class="bg-gray-100 border border-gray-300 w-auto h-auto pb-4 m-2 rounded-md px-4"
+      >
+        <p class="mt-2 text-xl font-semibold">Skills</p>
+        <div class="border-t border-gray-300 my-4"></div>
+        <div class="flex flex-row gap-12">
+          <!-- Programming Languages & Frameworks & Libraries -->
+          <div>
+            <p class="font-semibold mb-2">Programming Languages</p>
+            <div class="flex flex-wrap gap-4 mb-2">
+              <span class="px-3 py-1 bg-white border rounded-md">Python</span>
+              <span class="px-3 py-1 bg-white border rounded-md">HTML</span>
+              <span class="px-3 py-1 bg-white border rounded-md">CSS</span>
+            </div>
+            <div>
+              <p class="font-semibold mb-2">Frameworks & Libraries</p>
+              <div class="flex flex-wrap gap-4">
+                <span class="px-3 py-1 bg-white border rounded-md">Django</span>
+                <span class="px-3 py-1 bg-white border rounded-md"
+                  >Tailwind CSS</span
+                >
+                <span class="px-3 py-1 bg-white border rounded-md"
+                  >Bootstrap</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Databases & Tools -->
+          <div>
+            <p class="font-semibold mb-2">Databases</p>
+            <div class="flex flex-wrap gap-4 mb-2">
+              <span class="px-3 py-1 bg-white border rounded-md">SQLite</span>
+            </div>
+            <div>
+              <p class="font-semibold mb-2">Tools</p>
+              <div class="flex flex-wrap gap-4">
+                <span class="px-3 py-1 bg-white border rounded-md"
+                  >VS Code</span
+                >
+                <span class="px-3 py-1 bg-white border rounded-md"
+                  >PyCharm</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Projects section -->
+    <div>
+      <p class="text-4xl font-bold ml-6 mt-4">Projects</p>
+      <div
+        class="bg-gray-100 border border-gray-300 rounded-md w-full h-80 p-4 mt-4 mx-6"
+      >
+        <p>Project Title</p>
+      </div>
+    </div>
+  </body>
+</html>

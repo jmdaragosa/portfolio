@@ -6,7 +6,7 @@
     <title>Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="bg-white font-mono px-4 md:px-20 lg:px-60 py-4">
+  <body class="bg-white font-mono flex flex-col items-center px-48 py-8">
     <!-- Profile section -->
     <div
       class="border-gray-300 w-auto h-auto pb-4 m-2 rounded-md flex flex-row px-4"
@@ -42,22 +42,22 @@
           <div class="flex flex-row gap-2">
             <a
               href=""
-              class="w-44 text-center bg-white text-black font-semibold px-4 py-2 rounded-lg shadow hover:bg-gray-400 transition"
+              class="w-44 text-center bg-white text-black font-semibold px-4 py-2 rounded-lg shadow-lg hover:bg-gray-400 transition"
             >
               View Resume
             </a>
 
             <a
               href="https://www.linkedin.com/in/jazmine-marie-puyat-a7b613330/"
-              class="w-40 text-center bg-white text-black font-semibold px-4 py-2 rounded-lg shadow hover:bg-gray-400 transition"
+              class="w-40 text-center bg-white text-black font-semibold px-4 py-2 rounded-lg shadow-lg hover:bg-gray-400 transition"
             >
               View LinkedIn
             </a>
           </div>
 
           <a
-            href="mailto:jmdaragosa.puyat@gmail.com"
-            class="w-[344px] text-center bg-black text-white font-semibold px-4 py-2 rounded-lg shadow hover:bg-gray-500 hover:text-black transition"
+            href=""
+            class="w-[344px] text-center bg-black text-white font-semibold px-4 py-2 rounded-lg shadow-lg hover:bg-gray-500 hover:text-black transition"
           >
             Send Email
           </a>
@@ -65,11 +65,11 @@
       </div>
       <div class="ml-10 mt-4">
         <p class="text-2xl font-semibold">About Me</p>
-        <div class="border-t border-gray-300 my-4"></div>
-        <p class="mt-4 text-sm text-justify">
+        <div class="border-t border-gray-300 my-6"></div>
+        <p class="text-sm text-justify">
           I’m a Software Engineering student with a strong interest in backend
           development, particularly using Python and Django. I enjoy building
-          web applications that are both efficient and scalable, and Throughout
+          web applications that are both efficient and scalable, and throughout
           my studies, I have worked on projects that involve database design,
           API development, and user authentication systems, which have
           strengthened my problem-solving and coding skills. I’m currently
@@ -81,7 +81,7 @@
     </div>
 
     <!-- Info sesction -->
-    <div class="flex ml-2">
+    <div class="flex gap-2 my-2">
       <!-- Education -->
       <div
         class="bg-gray-100 border border-gray-300 w-auto h-auto pb-4 m-2 rounded-md px-4 shadow-lg"
@@ -103,48 +103,63 @@
 
       <!-- Skills -->
       <div
-        class="bg-gray-100 border border-gray-300 w-auto h-auto pb-4 m-2 rounded-md px-4 shadow-lg"
+        class="bg-gray-100 border border-gray-300 w-auto h-auto pb-4 m-2 rounded-md px-4"
       >
         <p class="mt-2 text-xl font-semibold">Skills</p>
         <div class="border-t border-gray-300 my-4"></div>
-        <div class="flex flex-row gap-12">
+        <div class="flex gap-9">
           <!-- Programming Languages & Frameworks & Libraries -->
-          <div>
-            <p class="font-semibold mb-2">Programming Languages</p>
-            <div class="flex flex-wrap gap-4 mb-2">
-              <span class="px-3 py-1 bg-white border rounded-md">Python</span>
-              <span class="px-3 py-1 bg-white border rounded-md">HTML</span>
-              <span class="px-3 py-1 bg-white border rounded-md">CSS</span>
+          <div class="flex flex-col gap-3">
+            <div>
+              <p class="font-semibold mb-2">Backend Development</p>
+              <div class="flex gap-2 mb-2">
+                <span class="px-3 py-1 bg-white border rounded-md">Python</span>
+                <span class="px-3 py-1 bg-white border rounded-md">Django</span>
+              </div>
             </div>
             <div>
-              <p class="font-semibold mb-2">Frameworks & Libraries</p>
-              <div class="flex flex-wrap gap-4">
-                <span class="px-3 py-1 bg-white border rounded-md">Django</span>
+              <p class="font-semibold mb-2">Web Development</p>
+              <div class="flex flex-wrap gap-3">
+                <span class="px-3 py-1 bg-white border rounded-md">HTML</span>
+                <span class="px-3 py-1 bg-white border rounded-md">CSS</span>
                 <span class="px-3 py-1 bg-white border rounded-md"
                   >Tailwind CSS</span
-                >
-                <span class="px-3 py-1 bg-white border rounded-md"
-                  >Bootstrap</span
                 >
               </div>
             </div>
           </div>
-
-          <!-- Databases & Tools -->
-          <div>
-            <p class="font-semibold mb-2">Databases</p>
-            <div class="flex flex-wrap gap-4 mb-2">
-              <span class="px-3 py-1 bg-white border rounded-md">SQLite</span>
+          <div class="flex flex-col gap-3">
+            <div>
+              <p class="font-semibold mb-2">Databases</p>
+              <div class="flex flex-wrap gap-4 mb-2">
+                <span class="px-3 py-1 bg-white border rounded-md">SQLite</span>
+              </div>
             </div>
             <div>
-              <p class="font-semibold mb-2">Tools</p>
-              <div class="flex flex-wrap gap-4">
-                <span class="px-3 py-1 bg-white border rounded-md"
-                  >VS Code</span
-                >
+              <p class="font-semibold mb-2">Version Control</p>
+              <div class="flex flex-wrap gap-4 mb-2">
+                <span class="px-3 py-1 bg-white border rounded-md">Git</span>
+                <span class="px-3 py-1 bg-white border rounded-md">GitHub</span>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-2">
+            <div>
+              <p class="font-semibold mb-2">Tools & IDE</p>
+              <div class="flex flex-wrap gap-4 mb-2">
                 <span class="px-3 py-1 bg-white border rounded-md"
                   >PyCharm</span
                 >
+                <span class="px-3 py-1 bg-white border rounded-md"
+                  >VS Code</span
+                >
+              </div>
+            </div>
+            <div>
+              <p class="font-semibold mb-2">Workflows</p>
+              <div class="flex flex-wrap gap-4 mb-2">
+                <span class="px-3 py-1 bg-white border rounded-md">Scrum</span>
+                <span class="px-3 py-1 bg-white border rounded-md"> Git </span>
               </div>
             </div>
           </div>
